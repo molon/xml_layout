@@ -2,3 +2,4 @@ pubspec.lock
 .packages
 .idea
 .dart_tool
+.vscode/launch.json

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:xml_layout/xml_layout.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -150,9 +149,9 @@ class _GridExample extends StatelessWidget {
               objects: {
                 "map": {
                   "pictures": [
-                    "https://homepages.cae.wisc.edu/~ece533/images/baboon.png",
-                    "https://homepages.cae.wisc.edu/~ece533/images/arctichare.png",
-                    "https://homepages.cae.wisc.edu/~ece533/images/airplane.png"
+                    "https://wx1.sinaimg.cn/mw2000/006a0Rdhly1gwspe674xtj32k61rb1l0.jpg",
+                    "https://wx2.sinaimg.cn/mw2000/006a0Rdhly1gwspe98sz6j31rb2k6e83.jpg",
+                    "https://wx1.sinaimg.cn/mw2000/006a0Rdhly1gwspeftogxj31le24b4qr.jpg"
                   ]
                 },
                 "print": (int idx) {
@@ -170,22 +169,28 @@ class _GridExample extends StatelessWidget {
 }
 
 class _BuilderExample extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
-    List data = [{
-      "title": "Title1",
-      "subtitle": "Content1",
-      "image": "https://homepages.cae.wisc.edu/~ece533/images/baboon.png"
-    }, {
-      "title": "Title2",
-      "subtitle": "Content2",
-      "image": "https://homepages.cae.wisc.edu/~ece533/images/arctichare.png"
-    }, {
-      "title": "Title3",
-      "subtitle": "Content3",
-      "image": "https://homepages.cae.wisc.edu/~ece533/images/airplane.png"
-    }];
+    List data = [
+      {
+        "title": "Title1",
+        "subtitle": "Content1",
+        "image":
+            "https://wx2.sinaimg.cn/mw2000/006a0Rdhly1gwspejn1n3j31rb2k61l0.jpg"
+      },
+      {
+        "title": "Title2",
+        "subtitle": "Content2",
+        "image":
+            "https://wx4.sinaimg.cn/mw2000/006a0Rdhly1gwspemuz4pj31rb2k6e84.jpg"
+      },
+      {
+        "title": "Title3",
+        "subtitle": "Content3",
+        "image":
+            "https://wx2.sinaimg.cn/mw2000/006a0Rdhly1gwspep9xuoj31oz2grb2b.jpg"
+      }
+    ];
     return FutureBuilder<String>(
         future: _loadLayout("assets/list.xml"),
         builder: (context, snapshot) {
